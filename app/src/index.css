@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "syne";
+    font-weight: 600;
+  }
+}
+body {
+  @apply bg-cstm-blue-100;
+}
+a {
+  @apply block;
+}
+.txt-stroke {
+  -webkit-text-stroke-width: 1px;
+}
+.txt-stroke-white {
+  -webkit-text-stroke-color: #fff;
+}
+.txt-stroke-primary {
+  -webkit-text-stroke-color: #1eebb4;
+}
+.circularTxt {
+  @apply tracking-widest;
+}
+.swiper-wrapper {
+  @apply pb-5;
+}
