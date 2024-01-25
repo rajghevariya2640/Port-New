@@ -17,7 +17,7 @@ const awardCircleText = ({text, className}) => {
         <textPath
           href='#link-circle'
           stroke='none'
-          fill='#fff'
+          fill='rgb(207 221 232'
           className='font-syne font-semibold circularTxt text-xl'>
           {text}
         </textPath>

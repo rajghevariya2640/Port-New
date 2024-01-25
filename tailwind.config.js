@@ -28,8 +28,9 @@ module.exports = {
         }
       },
       screens: {
+        xs: '100%',
         sm: '576px',
-        md: '76px',
+        md: '768px',
         lg: '960px',
         xl: '1140px',
         xxl: '1320px'
@@ -44,7 +45,8 @@ module.exports = {
       },
       boxShadow: {
         'btn': '-1px -1px 4px #114546, 4px 4px 9px #070618, 0px 0px 7px #0E4D4E',
-        'btnHover': 'inset -10px -10px 4px #04FFBC, inset 4px 4px 9px #005F2C, inset 10px 5px 7px #081D34'
+        'btnHover': 'inset -10px -10px 4px #04FFBC, inset 4px 4px 9px #005F2C, inset 10px 5px 7px #081D34',
+        'footerBtnShadow': 'inset -10px -10px 4px #04FFBC, inset 4px 4px 9px #005F2C, inset 0px 0px 7px #000000'
       },
       fontFamily: {
         'syne': 'Syne',
@@ -54,7 +56,7 @@ module.exports = {
         fadeDown: 'fadeDown 0.3s linear',
         rotate: 'rotate 20s linear infinite',
         pulse: 'pulse 1s infinite ease-out',
-        scrollTxt: 'scrollTxt 20s linear infinite',
+        scrollTxt: 'scrollTxt 20s linear infinite'
       },
       keyframes: {
         'fadeDown': {
@@ -87,10 +89,10 @@ module.exports = {
         },
         'scrollTxt': {
           '0%': {
-            transform: `translateX(0)`,
+            transform: `translateX(0)`
           },
           '100%': {
-            transform: `translateX(-100%)`,
+            transform: `translateX(-100%)`
 
           }
         }

@@ -19,7 +19,7 @@ const CursorFollower = () => {
 
   return (
     <>
-      <div className='fixed h-10 w-10 border-2 border-light-secondary rounded-full pointer-events-none z-[9999] translate-x-[-50%] translate-y-[-50%] duration-[0.1s]' style={{ left: `${position.x}px`, top: `${position.y}px` }}>
+      <div className='fixed h-10 w-10 border-2 border-light-secondary rounded-full pointer-events-none z-[9999] translate-x-[-50%] translate-y-[-50%]' style={{ left: `${position.x}px`, top: `${position.y}px` }}>
         {showDot && <span className='fixed top-1/2 left-1/2 h-1 w-1 translate-x-[-50%] rounded-full translate-y-[-50%] bg-secondary'></span>}
       </div>
     </>
