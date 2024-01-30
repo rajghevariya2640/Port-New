@@ -64,32 +64,33 @@ const Footer = () => {
   ]
 
   return (
-    <footer className='bg-footerBg bg-no-repeat overflow-hidden h-full w-full  py-20 relative'>
-      <div className='bg-footerImg bg-center bg-irght ms-auto w-1/2 h-full bg-no-repeat absolute top-0 right-0 bottom-0'></div>
+    <footer className='bg-footerBg bg-cover bg-no-repeat overflow-hidden h-full w-full py-[50px] md:py-16 lg:py-20 relative'>
+      <div className='bg-footerImg bg-right ms-auto w-1/2 h-full bg-no-repeat absolute top-0 right-0 bottom-0 hidden lg:block'></div>
       <PNContainer>
-        <div className='w-1/2 flex flex-col gap-12 relative'>
-          <AnimatedTxt text={"Portnew Digital Agency . Design Agency ."} className='bg-cstm-blue-50 !absolute top-1/2 right-0 translate-x-3/4 translate-y-[-50%]' />
-          <div className='flex flex-wrap max-w-[420px] gap-4'>
+        <div className='w-full lg:w-1/2 flex flex-col gap-8 sm:gap-10 lg:gap-12 relative'>
+          <div className='flex flex-wrap lg:max-w-[420px] gap-4'>
             {footerBtn.map((fbtn, fbtnIndex) => {
                return (
-                 <PNButton variant='outlined'>
+                 <PNButton variant='outlined' key={fbtnIndex}>
                    {fbtn.btn}
                  </PNButton>
                )
              })}
           </div>
-          {footerHead.map((fHead, fHeadIndex) => {
-             return (
-               <div key={fHeadIndex}>
-                 <PNBigText18 className='text-cstmGrey-100 font-syne font-semibold'>
-                   {fHead.subHead}
-                 </PNBigText18>
-                 <PNh4 className='text-cstmGrey-100'>
-                   {fHead.Head}
-                 </PNh4>
-               </div>
-             )
-           })}
+          <div className='space-y-12'>
+            {footerHead.map((fHead, fHeadIndex) => {
+               return (
+                 <div key={fHeadIndex}>
+                   <PNBigText18 className='text-cstmGrey-100 font-syne font-semibold'>
+                     {fHead.subHead}
+                   </PNBigText18>
+                   <PNh4 className='text-cstmGrey-100' data-aos='fade-up'>
+                     {fHead.Head}
+                   </PNh4>
+                 </div>
+               )
+             })}
+          </div>
           <div>
             <div>
               {footerLinks.map((flink, flinkIndex) => {
@@ -105,6 +106,7 @@ const Footer = () => {
               © 2023 Portnew, All Right Reserved.
             </PNBigText18>
           </div>
+          <AnimatedTxt text={" Design Agency Portnew Digital Agency ."} className='bg-cstm-blue-50 lg:!absolute top-1/2 right-0 lg:translate-x-3/4 lg:translate-y-[-50%]' />
         </div>
       </PNContainer>
     </footer>

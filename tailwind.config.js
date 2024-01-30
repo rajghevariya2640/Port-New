@@ -96,7 +96,10 @@ module.exports = {
 
           }
         }
-      }
+      },
+      transitionProperty: {
+        'height': 'height',
+      },
     }
   },
   plugins: []

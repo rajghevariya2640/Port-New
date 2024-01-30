@@ -25,16 +25,16 @@ const Counter = () => {
   ]
 
   return (
-    <div className='py-40'>
+    <div className='py-[50px] md:py-[75px] lg:py-[100px] xl:py-40'>
       <PNContainer>
-        <div className='flex'>
+        <div className='flex flex-wrap w-full gap-y-8'>
           {counter.map((count, countIndex) => {
              return (
-               <div className='w-3/12' key={countIndex}>
-                 <PrimaryStrokeTxt className='text-[130px] leading-tight'>
+               <div className='w-1/2 lg:w-3/12 text-center lg:text-start px-3' key={countIndex}>
+                 <PrimaryStrokeTxt className='text-5xl sm:text-6xl md:text-8xl xl:text-[130px] leading-tight'>
                    {count.number}
                  </PrimaryStrokeTxt>
-                 <PNh5 className='text-cstmGrey-100'>
+                 <PNh5 className='text-cstmGrey-100 !text-sm sm:!text-base md:!text-xl xl:!text-[26px]'>
                    {count.head}
                  </PNh5>
                </div>

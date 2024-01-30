@@ -6,7 +6,7 @@ const awardCircleText = ({text, className}) => {
       viewBox='0 0 200 200'
       width='140'
       height='140'
-          stroke='#fff'
+      stroke='#fff'
       className={`${className ? className : ''}`}>
       <path
         id='link-circle'

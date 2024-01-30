@@ -29,10 +29,10 @@ const Testimonial = () => {
   ]
 
   return (
-    <div className='py-40 h-screen min-h-[48rem] w-full bg-testimonial bg-no-repeat bg-cover'>
+    <div className='py-[50px] md:py-[75px] lg:py-[100px] xl:py-40 xl:h-screen xl:min-h-[48rem] w-full bg-testimonial bg-no-repeat bg-cover'>
       <PNContainer className='relative'>
         <PNHeading subTitle='TEAM' title='Our Professional Team' headWrapClass='text-center' />
-        <div className='absolute w-full top-1/2 left-1/2 translate-x-[-50%] flex justify-between items-center z-20'>
+        <div className='absolute w-full top-1/2 left-1/2 translate-x-[-50%] lg:flex justify-between items-center z-20 hidden'>
           <PNShadowBtn className='testiPrev' icon={<LeftArr/>} />
           <PNShadowBtn className='testiNext' icon={<RightArr/>} />
         </div>
@@ -43,14 +43,14 @@ const Testimonial = () => {
           navigation={{ nextEl: '.testiNext', prevEl: '.testiPrev' }}
           autoplay={{ delay: 2500, disableOnInteraction: false }}
           modules={[Navigation, Autoplay]}
-          className='mt-20'>
+          className='mt-8 xl:mt-20'>
           {testimonial.map((testi, testiIndex) => {
              return (
                <SwiperSlide className='text-center' key={testiIndex}>
                  <PNh6 className='text-cstmGrey-100 mx-auto max-w-[860px]'>
                    {testi.review}
                  </PNh6>
-                 <div className='h-16 max-w-16 w-full mx-auto !mt-20'>
+                 <div className='h-16 max-w-16 w-full mt-8 lg:mt-20 mx-auto'>
                    <img src={testi.img} alt={`Teame Member ${testiIndex + 1}`} />
                  </div>
                  <PNh6 className='text-cstmGrey-100 mt-2'>

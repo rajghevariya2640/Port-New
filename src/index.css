@@ -3,17 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "syne";
-    font-weight: 600;
-  }
-}
 body {
   @apply bg-cstm-blue-100;
   @apply m-0;
@@ -21,16 +10,25 @@ body {
   @apply font-dm;
   @apply overflow-x-hidden;
 }
-.root {
+#root {
   @apply overflow-x-hidden;
 }
 a {
   @apply block;
 }
-
 img {
   @apply w-full;
   @apply object-cover;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-syne;
+  @apply font-semibold;
+  @apply break-words;
 }
 .txt-stroke {
   -webkit-text-stroke-width: 1px;
@@ -44,6 +42,6 @@ img {
 .circularTxt {
   @apply tracking-widest;
 }
-.swiper-wrapper {
-  @apply pb-5;
+.blog-slider .swiper-wrapper {
+  @apply pb-2.5 ps-0 sm:ps-2;
 }

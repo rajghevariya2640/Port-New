@@ -6,10 +6,10 @@ const PNHeading = ({subTitle, title, headClass, headWrapClass}) => {
   return (
     <div className={`space-y-3 flex flex-col ${headWrapClass ? headWrapClass :''}
     `}>
-      <PNPrimaryTxt className='uppercase'>
+      <PNPrimaryTxt className='uppercase text-xs lg:text-base'>
         {subTitle}
       </PNPrimaryTxt>
-      <PNh3 className={`text-white ${headClass ? headClass : ''}`}>
+      <PNh3 className={`text-white ${headClass ? headClass : ''}`} data-aos='fade-up' data-offset="500">
         {title}
       </PNh3>
     </div>

@@ -86,19 +86,21 @@ const Blog = () => {
   ]
 
   return (
-    <div className='py-40 ms-[15px] xl:ms- xxl:ms-[10%] overflow-hidden'>
-      <div className='flex'>
+    <div className='py-[50px] md:py-[75px] lg:py-[100px] xl:py-40 mx-[15px] md:me-0 md:ms-[4%] lg:ms-[6%] xl:ms-[5%] xxl:ms-[10.5%] overflow-hidden'>
+      <div className='flex flex-wrap gap-y-5'>
         <div className='w-full xl:w-3/12'>
           <PNHeading subTitle='OUR BLOG' title='Explore Recent Article' headWrapClass='max-w-[400px]' />
         </div>
-        <div className='w-full xl:w-9/12 xxl:w-9/12'>
+        <div className='w-full xl:w-9/12 xxl:w-9/12 xl:ps-3'>
           <PNSwiper
             slidesPerView={3}
             spaceBetween={25}
             navigation={{ nextEl: '.testiNext', prevEl: '.testiPrev' }}
             autoplay={{ delay: 5000, disableOnInteraction: false }}
             modules={[Navigation, Autoplay]}
-            breakpoints={{ 991: { slidesPerView: 3 }, 576: { slidesPerView: 2 }, 0: { slidesPerView: 1 } }}>
+            breakpoints={{ 1320: { slidesPerView: 3 }, 1140: { slidesPerView: 2.5 }, 991: { slidesPerView: 3 }, 585: { slidesPerView: 2 }, 0: { slidesPerView: 1 } }}
+            className="blog-slider"
+          >
             {blogData.map((blog, blogIndex) => {
                return (
                  <SwiperSlide key={blogIndex} className='even:mt-5'>

@@ -48,7 +48,7 @@ const ClientSlider = () => {
   ]
 
   return (
-    <div className='pb-40'>
+    <div className='pb-[50px] md:pb-[75px] lg:pb-[100px] xl:pb-40'>
       <PNContainer>
         <PNh5 className='text-cstmGrey-100 text-center'>
           700+ OUR TRUSTED CLIENT
@@ -58,13 +58,18 @@ const ClientSlider = () => {
           slidesPerView={5}
           spaceBetween={25}
           navigation={{ nextEl: '.testiNext', prevEl: '.testiPrev' }}
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          autoplay={{ delay: 2500, disableOnInteraction: false }}
           modules={[Navigation, Autoplay]}
-          className='mt-20'>
+          breakpoints={{
+            0: { slidesPerView: 3, spaceBetween: 15 },
+            768: { slidesPerView: 4, spaceBetween: 20 },
+            1320: { slidesPerView: 5, spaceBetween: 25 },
+          }}
+          className="mt-8 xl:mt-20">
           {client.map((client, clientIndex) => {
              return (
                <SwiperSlide key={clientIndex}>
-                 <div className='h-[75px] w-auto'>
+                 <div className='h-10 md:h-[50px] xl:h-[75px] w-auto'>
                    <img src={client.img} alt={`${clientIndex + 1}`} className='h-full object-contain' />
                  </div>
                </SwiperSlide>

@@ -6,67 +6,48 @@ import { ReactComponent as Arrow } from '../../../assets/image/svg/workArr.svg'
 import PNBigText18 from '../../../components/PNBigText18'
 
 import AnimatedTxt from '../../../components/AnimatedTxt'
+import PNTable from '../../../components/PNTable'
 
 const Award = () => {
-
-  const awardRow = [
-    {
-      name: 'Awwwards',
+  const awardTbl = [
+    
+    [{
+      head: 'Awwwards',
       date: '05 Jan 2023',
       btn: 'see project'
-    },
-    {
-      name: 'Github',
+    }],
+    [{
+      head: 'Github',
       date: '09 Feb 2023',
       btn: 'see project'
-    },
-    {
-      name: 'Zencode',
+    }],
+    [{
+      head: 'Zencode',
       date: '14 Mar 2023',
       btn: 'see project'
-    },
-    {
-      name: 'Drobbble',
+    }],
+    [{
+      head: 'Drobbble',
       date: '16 Mar 2023',
       btn: 'see project'
-    }
+    }]
+    
   ]
 
   return (
-    <div className='py-40'>
+    <div className='py-[50px] md:py-[75px] lg:py-[100px] xl:py-40'>
       <PNContainer>
-        <div className='flex space-x-4'>
-          <div className='w-5/12'>
-            <PNHeading subTitle='AWARD' title='Our Hard Work Has Been Multiple Awards' headWrapClass='max-w-[540px] w-full' />
-            <AnimatedTxt text={'Design Agency Portnew Digital Agency .'} />
+        <div className='flex flex-wrap gap-y-5'>
+          <div className='w-full xl:w-5/12'>
+            <PNHeading subTitle='AWARD' title='Our Hard Work Has Been Multiple Awards' headWrapClass='xl:max-w-[540px] w-full' />
+            <AnimatedTxt text={'Design Agency Portnew Digital Agency .'} className='mt-10 hidden xl:block' />
           </div>
-          <div className='w-7/12'>
-            <table className='w-full'>
-              <tbody>
-                {awardRow.map((row, rowIndex) => {
-                   return (
-                     <tr key={rowIndex} className='py-12 px-8 border-t-[1px] flex justify-between border-primary-100'>
-                       <td>
-                         <PNBigText18 className='font-syne text-cstmGrey-100 font-semibold'>
-                           {row.name}
-                         </PNBigText18>
-                       </td>
-                       <td>
-                         <PNBigText18 className='font-syne text-cstmGrey-100 font-semibold'>
-                           {row.date}
-                         </PNBigText18>
-                       </td>
-                       <td>
-                         <PNButton variant='link' className='flex space-x-2 items-center !capitalize !text-primary-50'>
-                           {row.btn}
-                           <Arrow className='stroke-primary-50 h-[18px]' />
-                         </PNButton>
-                       </td>
-                     </tr>
-                   )
-                 })}
-              </tbody>
-            </table>
+          <div className='w-full xl:w-7/12'>
+            {awardTbl?.map((awrdTbl, awrdTblIndex) => {
+               return (
+                 <PNTable key={awrdTblIndex} tableData={awrdTbl} />
+               )
+             })}
           </div>
         </div>
       </PNContainer>

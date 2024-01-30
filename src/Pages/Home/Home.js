@@ -11,7 +11,6 @@ import Award from './Sections/Award'
 import ClientSlider from './Sections/ClientSlider'
 import Video from './Sections/Video'
 import Blog from './Sections/Blog'
-import ScrollTxt2 from './Sections/ScrollTxt2'
 import Contact from './Sections/Contact'
 
 const Home = () => {
@@ -29,7 +28,6 @@ const Home = () => {
       <ClientSlider />
       <Video />
       <Blog />
-      <ScrollTxt2 />
       <Contact />
     </>
   )
