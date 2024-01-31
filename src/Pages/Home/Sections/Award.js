@@ -1,9 +1,6 @@
 import React from 'react'
 import PNContainer from '../../../components/PNContainer'
 import PNHeading from '../../../components/PNHeading'
-import PNButton from '../../../components/PNButton'
-import { ReactComponent as Arrow } from '../../../assets/image/svg/workArr.svg'
-import PNBigText18 from '../../../components/PNBigText18'
 
 import AnimatedTxt from '../../../components/AnimatedTxt'
 import PNTable from '../../../components/PNTable'
@@ -39,7 +36,7 @@ const Award = () => {
       <PNContainer>
         <div className='flex flex-wrap gap-y-5'>
           <div className='w-full xl:w-5/12'>
-            <PNHeading subTitle='AWARD' title='Our Hard Work Has Been Multiple Awards' headWrapClass='xl:max-w-[540px] w-full' />
+            <PNHeading subTitle='AWARD' title='Our Hard Work Has Been Multiple Awards' headWrapClass='xl:max-w-[540px] w-full'/>
             <AnimatedTxt text={'Design Agency Portnew Digital Agency .'} className='mt-10 hidden xl:block' />
           </div>
           <div className='w-full xl:w-7/12'>

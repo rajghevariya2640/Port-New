@@ -1,18 +1,18 @@
 import React from 'react'
-import Banner from './Sections/Banner'
-import Solution from './Sections/Solution'
-import Services from './Sections/Services'
-import StrokeTxtScroll from './Sections/StrokeTxtScroll'
-import RecentWork from './Sections/RecentWork'
-import Counter from './Sections/Counter'
-import Team from './Sections/Team'
 import Award from './Sections/Award'
-import ClientSlider from './Sections/ClientSlider'
-import Video from './Sections/Video'
+import Banner from './Sections/Banner'
 import Blog from './Sections/Blog'
 import Contact from './Sections/Contact'
-import PrimaryTxtScroll from './Sections/PrimaryTxtScroll'
+import Counter from './Sections/Counter'
+import HomeClient from './Sections/HomeClient'
 import HomeTestimonial from './Sections/HomeTestimonial'
+import PrimaryTxtScroll from './Sections/PrimaryTxtScroll'
+import RecentWork from './Sections/RecentWork'
+import Services from './Sections/Services'
+import Solution from './Sections/Solution'
+import StrokeTxtScroll from './Sections/StrokeTxtScroll'
+import Team from './Sections/Team'
+import Video from './Sections/Video'
 
 const Home = () => {
   return (
@@ -26,7 +26,7 @@ const Home = () => {
       <Team />
       <HomeTestimonial />
       <Award />
-      <ClientSlider />
+      <HomeClient/>
       <Video />
       <Blog />
       <PrimaryTxtScroll />

@@ -41,7 +41,8 @@ module.exports = {
         'video': "url('/src/assets/image/png/VideoBg.png')",
         'contact': "url('/src/assets/image/png/ContactBg.png')",
         'footerBg': "url('/src/assets/image/png/FooterBG.png')",
-        'footerImg': "url('/src/assets/image/png/FooterImage.jpeg')"
+        'footerImg': "url('/src/assets/image/png/FooterImage.jpeg')",
+        'subHead': "url('/src/assets/image/svg/subHeadBg.svg')",
       },
       boxShadow: {
         'btn': '-1px -1px 4px #114546, 4px 4px 9px #070618, 0px 0px 7px #0E4D4E',
