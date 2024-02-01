@@ -1,11 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import PNContainer from "./PNContainer";
 import PNLink from "./PNLink";
-import Logo from "../assets/image/png/Logo.png";
-import { ReactComponent as MenuIcn } from "../assets/image/svg/menuIcn.svg";
-import { ReactComponent as Plus } from "../assets/image/svg/plus.svg";
-import { ReactComponent as Minus } from "../assets/image/svg/minus.svg";
-import { ReactComponent as Close } from "../assets/image/svg/close.svg";
+import Logo from "../assets/image/Home/png/Logo.png";
+import { ReactComponent as Plus } from "../assets/image/Home/svg/plus.svg";
+import { ReactComponent as Minus } from "../assets/image/Home/svg/minus.svg";
 import Hamburger from 'hamburger-react';
 
 const Header = () => {
@@ -25,28 +23,19 @@ const Header = () => {
   }, []);
   
   // Toggle Menu
-
   const [navOpen, setNavOpen] = useState(false)
   const menuToggle = () => {
     setNavOpen(!navOpen);
   };
+
   // Toggle Sub Menu
   const [isSubMenuOpen, setSubMenuOpen] = useState(false);
-
   const subMenuToggle = (name) => {
     if (isSubMenuOpen === name) {
       return setSubMenuOpen(false);
     }
     return setSubMenuOpen(name);
   };
-
-  // Outside click
-  // const menuRef = useRef()
-  // const handleClickOutside = (e) => {
-  //   if (menuRef.current) {
-  //     menuToggle();
-  //   }
-  // };
 
   const menu = [
     {
@@ -109,9 +98,10 @@ const Header = () => {
               <ul className={`lg:justify-between lg:flex absolute top-full left-0 bg-primary-100 w-full origin-top lg:static lg:bg-transparent border-y-[1px] duration-500 lg:scale-y-100 z-50 border-y-primary-50 lg:border-0  ${navOpen ? "scale-y-100" : "scale-y-0"}`}>
                 {menu.map((menu, menuIndex) => {
                   return (
+                    <>
                     <li
                       key={menuIndex}
-                      className="relative group py-2 lg:py-0"
+                      className={`relative group py-2 lg:py-0 overflow-hidden  lg:overflow-visible h-[40px] lg:h-full transition-[h] duration-500 ${isSubMenuOpen === menu.name ? "animate-slide" : ""}`}
                     >
                       <PNLink className="uppercase py-0 px-5 lg:py-7 lg:px-0 text-white hover:text-primary-50 hover:cursor-pointer duration-500 flex justify-between items-center" onClick={() => subMenuToggle(menu.name)}>
                         {menu.label}
@@ -123,7 +113,7 @@ const Header = () => {
                       </PNLink>
                         {menu.smList &&(
                           <>
-                            <ul className={`lg:opacity-0 lg:invisible  lg:translate-y-4 group-hover:translate-y-0  group-hover:opacity-100 group-hover:visible lg:absolute  top-full left-0 bg-primary-100 lg:py-2.5 rounded-b-lg w-[260px] ps-5 lg:ps-0 lg:border-t-2  border-secondary duration-500 h-0 scale-y-0 origin-top lg:scale-y-100 lg:h-max ${isSubMenuOpen === menu.name ? "h-full scale-y-100" : ""}`}>
+                            <ul className={`lg:opacity-0 lg:invisible  lg:translate-y-4 lg:group-hover:translate-y-0  lg:group-hover:opacity-100 lg:group-hover:visible lg:absolute top-full left-0 bg-primary-100 lg:py-2.5 rounded-b-lg lg:w-[260px] ps-5 lg:ps-0 lg:border-t-2  border-secondary duration-500`}>
                               {menu.smList.map((smLink, smListIndex) => {
                                 return (
                                   <li key={smListIndex}>
@@ -134,7 +124,8 @@ const Header = () => {
                             </ul>
                           </>
                         )}
-                    </li>
+                      </li>
+                      </>
                   );
                 })}
               </ul>

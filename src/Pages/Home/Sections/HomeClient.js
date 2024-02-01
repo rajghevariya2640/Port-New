@@ -1,10 +1,10 @@
 import React from 'react'
 import PNClientSlider from '../../../components/PNClientSlider'
-import Client1 from '../../../assets/image/svg/client1.svg'
-import Client2 from '../../../assets/image/svg/client2.svg'
-import Client3 from '../../../assets/image/svg/client3.svg'
-import Client4 from '../../../assets/image/svg/client4.svg'
-import Client5 from '../../../assets/image/svg/client5.svg'
+import Client1 from '../../../assets/image/Home/svg/client1.svg'
+import Client2 from '../../../assets/image/Home/svg/client2.svg'
+import Client3 from '../../../assets/image/Home/svg/client3.svg'
+import Client4 from '../../../assets/image/Home/svg/client4.svg'
+import Client5 from '../../../assets/image/Home/svg/client5.svg'
 
 const HomeClient = () => {
 

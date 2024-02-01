@@ -1,12 +1,12 @@
 import React from 'react'
 import PNTestimonial from '../../../components/PNTestimonial'
-import Testi1 from '../../../assets/image/png/Testimonial1.png'
-import Testi2 from '../../../assets/image/png/Testimonial2.png'
+import Testi1 from '../../../assets/image/Home/png/Testimonial1.png'
+import Testi2 from '../../../assets/image/Home/png/Testimonial2.png'
 import PNContainer from '../../../components/PNContainer'
 import PNHeading from '../../../components/PNHeading'
 import PNShadowBtn from '../../../components/PNShadowBtn'
-import { ReactComponent as LeftArr } from '../../../assets/image/svg/testiLeft.svg'
-import { ReactComponent as RightArr } from '../../../assets/image/svg/testiRight.svg'
+import { ReactComponent as LeftArr } from '../../../assets/image/Home/svg/testiLeft.svg'
+import { ReactComponent as RightArr } from '../../../assets/image/Home/svg/testiRight.svg'
 
 const HomeTestimonial = () => {
 
@@ -16,11 +16,11 @@ const HomeTestimonial = () => {
       img: Testi1,
       name: 'Johan Daniel'
     },
-    {
-      review: '“Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature fr45 BC, making it over 2000 years old. Richard McClintock, a Latin  professor at Hampden-Sydney College. professor at Hampden-Sydney College.”',
-      img: Testi2,
-      name: 'Johan Daniel'
-    }]
+      {
+        review: '“Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature fr45 BC, making it over 2000 years old. Richard McClintock, a Latin  professor at Hampden-Sydney College. professor at Hampden-Sydney College.”',
+        img: Testi2,
+        name: 'Johan Daniel'
+      }]
   ]
 
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import PNScrollTxt from '../../../components/PNScrollTxt'
-import { ReactComponent as Shape } from "../../../assets/image/svg/txtScroll.svg";
+import { ReactComponent as Shape } from "../../../assets/image/Home/svg/txtScroll.svg";
 
 const StrokeTxtScroll = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import PNContainer from '../../../components/PNContainer'
 import PNButton from '../../../components/PNButton'
-import { ReactComponent as CloseIcn } from '../../../assets/image/svg/close.svg'
+import { ReactComponent as CloseIcn } from '../../../assets/image/Home/svg/close.svg'
 import Video1 from '../../../assets/Video/HomeVideo.mp4'
 
 const Video = () => {
@@ -17,7 +17,7 @@ const Video = () => {
   const closeVideo = () => {
     setIsOpen(false)
     document.body.style.overflowY = 'auto'
-    document.body.style.paddingRight = '0px' // Enable scrolling
+    document.body.style.paddingRight = '0px'
   }
 
   const handleClickOutside = (e) => {

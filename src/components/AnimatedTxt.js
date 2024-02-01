@@ -1,6 +1,6 @@
 import React from 'react'
-import CircleText from '../assets/image/svg/awardCircleText.js'
-import { ReactComponent as CircleArrow } from '../assets/image/svg/awardCircleArrow.svg'
+import CircleText from '../assets/image/Home/svg/awardCircleText.js'
+import { ReactComponent as CircleArrow } from '../assets/image/Home/svg/awardCircleArrow.svg'
 
 const AnimatedTxt = ({text, className}) => {
   return (

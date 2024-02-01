@@ -2,7 +2,7 @@ import React from "react";
 import PNBigText18 from "./PNBigText18";
 import PNGreyTxt from "./PNGreyTxt";
 import PNButton from "./PNButton";
-import { ReactComponent as Arrow } from "../assets/image/svg/workArr.svg";
+import { ReactComponent as Arrow } from "../assets/image/Home/svg/workArr.svg";
 
 const PNTable = ({ tableClass, trClass, tableData, ...props }) => {
   return (

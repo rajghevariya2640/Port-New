@@ -5,6 +5,8 @@ module.exports = {
     './src/Components/*.{js,ts,jsx,tsx}',
     './src/Pages/Home/*.{js,ts,jsx,tsx}',
     './src/Pages/Home/Sections/*.{js,ts,jsx,tsx}',
+    './src/Pages/About/*.{js,ts,jsx,tsx}',
+    './src/Pages/About/Sections/*.{js,ts,jsx,tsx}',
     './src/*.{js,ts,jsx,tsx}'
   ],
   theme: {
@@ -36,13 +38,13 @@ module.exports = {
         xxl: '1320px'
       },
       backgroundImage: {
-        'Banner': "url('/src/assets/image/png/Banner.jpeg')",
-        'testimonial': "url('/src/assets/image/png/TestiBg.png')",
-        'video': "url('/src/assets/image/png/VideoBg.png')",
-        'contact': "url('/src/assets/image/png/ContactBg.png')",
-        'footerBg': "url('/src/assets/image/png/FooterBG.png')",
-        'footerImg': "url('/src/assets/image/png/FooterImage.jpeg')",
-        'subHead': "url('/src/assets/image/svg/subHeadBg.svg')",
+        'HomeBanner': "url('/src/assets/image/Home/png/Banner.jpeg')",
+        'testimonial': "url('/src/assets/image/Home/png/TestiBg.png')",
+        'video': "url('/src/assets/image/Home/png/VideoBg.png')",
+        'contact': "url('/src/assets/image/Home/png/ContactBg.png')",
+        'footerBg': "url('/src/assets/image/Home/png/FooterBG.png')",
+        'footerImg': "url('/src/assets/image/Home/png/FooterImage.jpeg')",
+        'subHead': "url('/src/assets/image/Home/svg/subHeadBg.svg')"
       },
       boxShadow: {
         'btn': '-1px -1px 4px #114546, 4px 4px 9px #070618, 0px 0px 7px #0E4D4E',
@@ -56,8 +58,9 @@ module.exports = {
       animation: {
         fadeDown: 'fadeDown 0.3s linear',
         rotate: 'rotate 20s linear infinite',
-        pulse: 'pulse 1s infinite ease-out',
-        scrollTxt: 'scrollTxt 20s linear infinite'
+        pulse: 'pulse 1.5s infinite ease-in-out',
+        scrollTxt: 'scrollTxt 20s linear infinite',
+        slide: 'slide 0.5s linear paused'
       },
       keyframes: {
         'fadeDown': {
@@ -96,11 +99,20 @@ module.exports = {
             transform: `translateX(-100%)`
 
           }
+        },
+        'slide': {
+          '0%': {
+            height: `30px`
+          },
+          '100%': {
+            height: `100%`
+
+          }
         }
       },
       transitionProperty: {
-        'height': 'height',
-      },
+        'height': 'height'
+      }
     }
   },
   plugins: []

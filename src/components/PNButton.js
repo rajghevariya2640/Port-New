@@ -4,7 +4,7 @@ const PNButton = ({children, className, variant, ...props}) => {
   const getButtonStyle = () => {
     switch (variant) {
       case 'primary':
-        return "border-[1px] border-secondary text-secondary z-10 py-3 px-6 rounded-none ";
+        return "border-[1px] border-secondary text-secondary z-10 py-3 px-6 rounded-none !uppercase";
       case 'secondary':
         return "max-w-[100px] sm:max-w-[125px] lg:max-w-[155px] text-white w-full min-h-[100px] sm:min-h-[125px] lg:min-h-[155px] rounded-full p-0 border-[1px] border-secondary text-secondary z-10";
       case 'link':

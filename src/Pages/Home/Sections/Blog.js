@@ -1,21 +1,21 @@
 import React from 'react'
-import PNContainer from '../../../components/PNContainer'
-import PNHeading from '../../../components/PNHeading'
-import PNSwiper from '../../../components/PNSwiper'
 import 'swiper/css'
 import 'swiper/css/navigation'
-import { Navigation, Autoplay } from 'swiper/modules'
+import 'swiper/css/free-mode'
+import { Autoplay, Navigation, FreeMode } from 'swiper/modules'
 import { SwiperSlide } from 'swiper/react'
-import Blog1 from '../../../assets/image/png/Blog1.png'
-import Blog2 from '../../../assets/image/png/Blog2.png'
-import Blog3 from '../../../assets/image/png/Blog3.png'
-import { ReactComponent as Clock } from '../../../assets/image/svg/clock.svg'
-import PNPrimaryTxt from '../../../components/PNPrimaryTxt'
+import Blog1 from '../../../assets/image/Home/png/Blog1.png'
+import Blog2 from '../../../assets/image/Home/png/Blog2.png'
+import Blog3 from '../../../assets/image/Home/png/Blog3.png'
+import { ReactComponent as Clock } from '../../../assets/image/Home/svg/clock.svg'
+import { ReactComponent as CrossArr } from '../../../assets/image/Home/svg/workArr.svg'
 import PNGreyTxt from '../../../components/PNGreyTxt'
-import PNh6 from '../../../components/PNh6'
-import { ReactComponent as CrossArr } from '../../../assets/image/svg/workArr.svg'
+import PNHeading from '../../../components/PNHeading'
 import PNLink from '../../../components/PNLink'
+import PNPrimaryTxt from '../../../components/PNPrimaryTxt'
 import PNShadowBtn from '../../../components/PNShadowBtn'
+import PNSwiper from '../../../components/PNSwiper'
+import PNh6 from '../../../components/PNh6'
 
 const Blog = () => {
 
@@ -96,11 +96,11 @@ const Blog = () => {
             slidesPerView={3}
             spaceBetween={25}
             navigation={{ nextEl: '.testiNext', prevEl: '.testiPrev' }}
+            freeMode={true}
             autoplay={{ delay: 5000, disableOnInteraction: false }}
-            modules={[Navigation, Autoplay]}
+            modules={[FreeMode, Navigation, Autoplay]}
             breakpoints={{ 1320: { slidesPerView: 3 }, 1140: { slidesPerView: 2.5 }, 991: { slidesPerView: 3 }, 585: { slidesPerView: 2 }, 0: { slidesPerView: 1 } }}
-            className="blog-slider"
-          >
+            className='blog-slider'>
             {blogData.map((blog, blogIndex) => {
                return (
                  <SwiperSlide key={blogIndex} className='even:mt-5'>
