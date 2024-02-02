@@ -44,7 +44,8 @@ module.exports = {
         'contact': "url('/src/assets/image/Home/png/ContactBg.png')",
         'footerBg': "url('/src/assets/image/Home/png/FooterBG.png')",
         'footerImg': "url('/src/assets/image/Home/png/FooterImage.jpeg')",
-        'subHead': "url('/src/assets/image/Home/svg/subHeadBg.svg')"
+        'subHead': "url('/src/assets/image/Home/svg/subHeadBg.svg')",
+        'AboutBanner': "url('/src/assets/image/About/png/AboutBg.png')"
       },
       boxShadow: {
         'btn': '-1px -1px 4px #114546, 4px 4px 9px #070618, 0px 0px 7px #0E4D4E',
@@ -60,7 +61,7 @@ module.exports = {
         rotate: 'rotate 20s linear infinite',
         pulse: 'pulse 1.5s infinite ease-in-out',
         scrollTxt: 'scrollTxt 20s linear infinite',
-        slide: 'slide 0.5s linear paused'
+        slide: 'slide 1s linear paused'
       },
       keyframes: {
         'fadeDown': {
@@ -102,7 +103,7 @@ module.exports = {
         },
         'slide': {
           '0%': {
-            height: `30px`
+            height: `40px`
           },
           '100%': {
             height: `100%`

@@ -6,7 +6,7 @@ import PNButton from '../../../components/PNButton'
 
 const Solution = () => {
   return (
-    <div className='py-[50px] md:py-[75px] lg:py-[100px] xl:py-[50px] text-center'>
+    <div className='py-[50px] md:py-[75px] lg:py-[100px] xl:py-40 text-center'>
       <PNContainer>
         <PNh2 className='txt-stroke txt-stroke-white uppercase text-transparent max-w-[1150px] w-full mx-auto leading-tight duration-500 font-syne font-semibold hover:text-white' data-aos='fade-up'>
           We Are Complete Solution For Every Idea
