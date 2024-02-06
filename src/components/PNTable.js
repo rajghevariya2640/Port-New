@@ -18,14 +18,14 @@ const PNTable = ({ tableClass, trClass, tableData, ...props }) => {
             >
               {tbl.head && (
                 <td>
-                  <PNBigText18 className="font-syne text-cstmGrey-100 font-semibold text-sm">
+                  <PNBigText18 className="font-syne text-cstmGrey-100 font-semibold text-sm w-[90px] break-words md:w-[185px]">
                     {tbl.head}
                   </PNBigText18>
                 </td>
               )}
               {tbl.info && (
                 <td>
-                  <PNGreyTxt>{tbl.info}</PNGreyTxt>
+                  <PNGreyTxt className="xxl:max-w-[650px] text-sm md:text-base w-full">{tbl.info}</PNGreyTxt>
                 </td>
               )}
               {tbl.date && (

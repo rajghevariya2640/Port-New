@@ -31,7 +31,7 @@ const AboutTestimonial = () => {
             subTitle='TEAM'
             title='Our Professional Team'
             headWrapClass='text-center'
-            bgClass='bg-subHead bg-no-repeat bg-contain bg-center' />
+            bgClass='bg-subHead' />
           <div className='absolute w-full top-1/2 left-1/2 translate-x-[-50%] lg:flex justify-between items-center z-20 hidden'>
             <PNShadowBtn className='testiPrev' icon={<LeftArr/>} />
             <PNShadowBtn className='testiNext' icon={<RightArr/>} />

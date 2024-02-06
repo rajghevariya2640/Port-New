@@ -36,7 +36,7 @@ module.exports = {
         lg: '960px',
         xl: '1140px',
         xxl: '1320px',
-        '3xl': '1536px',
+        '3xl': '1536px'
       },
       backgroundImage: {
         'HomeBanner': "url('/src/assets/image/Home/png/Banner.jpeg')",
@@ -46,7 +46,8 @@ module.exports = {
         'footerBg': "url('/src/assets/image/Home/png/FooterBG.png')",
         'footerImg': "url('/src/assets/image/Home/png/FooterImage.jpeg')",
         'subHead': "url('/src/assets/image/Home/svg/subHeadBg.svg')",
-        'AboutBanner': "url('/src/assets/image/About/png/AboutBg.png')"
+        'AboutBanner': "url('/src/assets/image/About/png/AboutBg.png')",
+        'AboutVideo': "url('/src/assets/image/About/png/VideoBg.png')"
       },
       boxShadow: {
         'btn': '-1px -1px 4px #114546, 4px 4px 9px #070618, 0px 0px 7px #0E4D4E',

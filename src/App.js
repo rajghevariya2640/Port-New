@@ -38,7 +38,7 @@ function App() {
     <>
       <div>
         {isVisible && (
-          <PNShadowBtn onClick={scrollToTop} className="z-50 fixed bottom-10 right-10 bg-cstm-blue-100">
+          <PNShadowBtn onClick={scrollToTop} className="z-50 fixed bottom-5 right-5 lg:bottom-10 lg:right-10 bg-cstm-blue-100">
               <TopArr className='stroke-primary-100'/>
           </PNShadowBtn>
         )}

@@ -23,7 +23,7 @@ const AboutSolution = () => {
               <PNh4 className='text-white mb-5 md:mb-8 lg:mb-11'>
                 We Are Complete Solution For Every Idea
               </PNh4>
-              <div className="space-y-4 pb-8 lg:pb-11 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-2/12 after:bg-secondary">
+              <div className="space-y-4 pb-8 lg:pb-11 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-3/12 after:bg-secondary">
                 <PNGreyTxt>
                   Design sweet lorem ipsum? You got it with Cupcake Ipsum, the only text generator that includes marsh mallows, carrot cake, and perhaps e on top. Design sweet lorem
                   ipsum? You got it with Cupcake Ipsum, the only text generator that includes marsh mallows, carrot cake.
