@@ -35,7 +35,8 @@ module.exports = {
         md: '768px',
         lg: '960px',
         xl: '1140px',
-        xxl: '1320px'
+        xxl: '1320px',
+        '3xl': '1536px',
       },
       backgroundImage: {
         'HomeBanner': "url('/src/assets/image/Home/png/Banner.jpeg')",

@@ -4,7 +4,7 @@ import PNGreyTxt from '../../../components/PNGreyTxt'
 
 const AboutBanner = () => {
   return (
-    <div className='h-[45vh] min-h-[20rem] bg-AboutBanner bg-cover bg-no-repeat flex justify-center items-center flex-col'>
+    <div className='h-[30vh] min-h-[13rem] sm:h-[35vh] sm:min-h-[16rem] lg:h-[45vh] lg:min-h-[20rem] bg-AboutBanner bg-cover bg-no-repeat flex justify-center items-center flex-col'>
       <div className='flex space-x-6 mb-3'>
         <PNGreyTxt>
           -- Home

@@ -11,6 +11,8 @@ const PNButton = ({children, className, variant, ...props}) => {
         return "after:hidden before:content-[''] before:absolute before:bottom-0 before:left-[-100%] before:hover:left-0 before:w-4/5 before:h-[1px] before:duration-500 before:bg-primary-50 text-white hover:text-primary-50 !uppercase";
       case 'outlined':
         return "py-4 px-6 rounded-full border-[1px] border-primary-50 !text-primary-50 hover:bg-primary-50 hover:!text-cstm-blue-50 hover:shadow-footerBtnShadow";
+      case 'none':
+        return "after:!hidden hover:text-white pointer-events-none";
       default:
         return '';
     }

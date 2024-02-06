@@ -1,11 +1,11 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const PNNavLink = ({children, className, ...props}) => {
   return (
-    <Link className={`${className ? className : ''}`} {...props}>
+    <NavLink className={`${className ? className : ''}`} {...props}>
       {children}
-      </Link>
+      </NavLink>
   )
 }
 
