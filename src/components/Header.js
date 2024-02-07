@@ -149,8 +149,8 @@ const Header = () => {
                     <>
                       <li
                         key={menuIndex}
-                        className={`relative group py-2 lg:py-0 overflow-hidden  lg:overflow-visible h-[40px] lg:h-full transition-height duration-500 ${
-                          isSubMenuOpen === menu.name ? "animate-slide " : ""
+                        className={`relative group py-2 lg:py-0 overflow-hidden  lg:overflow-visible lg:h-full transition-height duration-500 ${
+                          isSubMenuOpen === menu.name ? "animate-slide " : " h-[40px]"
                         }`}
                       >
                         <PNNavLink

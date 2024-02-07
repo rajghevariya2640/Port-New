@@ -5,7 +5,7 @@ import PNButton from './PNButton'
 
 const PNSingleSkillValueBox = ({boxClass, boxNumber, boxHead, boxInfo, boxHeadClass, boxHeadWrapClass, variant}) => {
   return (
-    <div className={`mt-12 px-3 mx-[-12px] ${boxClass ? boxClass : ''}`}>
+    <div className={`mt-8 lg:mt-12 px-3 mx-[-12px] ${boxClass ? boxClass : ''}`}>
       <div className={`space-y-2 mb-4 ${boxHeadWrapClass ? boxHeadWrapClass : ''}`}>
         <PNPrimaryTxt>
           {boxNumber}

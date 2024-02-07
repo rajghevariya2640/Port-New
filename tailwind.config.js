@@ -63,7 +63,7 @@ module.exports = {
         rotate: 'rotate 20s linear infinite',
         pulse: 'pulse 1.5s infinite ease-in-out',
         scrollTxt: 'scrollTxt 20s linear infinite',
-        slide: 'slide 1s linear paused'
+        slide: 'slide 1s linear'
       },
       keyframes: {
         'fadeDown': {
@@ -105,10 +105,10 @@ module.exports = {
         },
         'slide': {
           '0%': {
-            height: `40px`
+            maxHeight: `40px`
           },
           '100%': {
-            height: `100%`
+            maxHeight: `100%`
 
           }
         }
