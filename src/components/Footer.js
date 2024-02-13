@@ -44,9 +44,6 @@ const Footer = () => {
       btn: 'About /'
     },
     {
-      btn: 'About /'
-    },
-    {
       btn: 'services /'
     },
     {
@@ -57,6 +54,9 @@ const Footer = () => {
     },
     {
       btn: 'blog /'
+    },
+    {
+      btn: 'Team /'
     },
     {
       btn: 'contact'

@@ -9,6 +9,7 @@ import Header from './components/Header';
 import PNShadowBtn from './components/PNShadowBtn';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import About from './Pages/About/About';
+import Loader from './components/Loader';
 
 function App() {
   // scroll to top button
@@ -34,8 +35,22 @@ function App() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  // Loader
+  const [showLoading, setShowLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
+      <div>
+        {showLoading && <Loader />}
+      </div>
       <div>
         {isVisible && (
           <PNShadowBtn onClick={scrollToTop} className="z-50 fixed bottom-5 right-5 lg:bottom-10 lg:right-10 bg-cstm-blue-100">

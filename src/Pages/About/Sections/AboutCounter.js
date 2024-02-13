@@ -2,6 +2,7 @@ import React from 'react'
 import PNContainer from '../../../components/PNContainer'
 import PrimaryStrokeTxt from '../../../components/PrimaryStrokeTxt'
 import PNh6 from '../../../components/PNh6'
+import CountUp from 'react-countup'
 
 const AboutCounter = () => {
 
@@ -30,9 +31,13 @@ const AboutCounter = () => {
         <div className='flex flex-wrap justify-between gap-y-5'>
           {singleCounter.map((counter, counterIndex) => {
              return (
-               <div className="w-[48%] md:w-[175px] lg:max-w-[200px] relative after:content-[''] xl:after:absolute after:top-0 xl:after:left-[-25%] xxl:after:left-[-40%] 3xl:after:left-[-50%] first:after:hidden after:h-full after:w-0.5 after:bg-primary-100">
+               <div className="w-[48%] md:w-[175px] lg:max-w-[200px] relative after:content-[''] xl:after:absolute after:top-0 xl:after:left-[-40%] xxl:after:left-[-60%] 3xl:after:left-[-75%] first:after:hidden after:h-full after:w-0.5 after:bg-primary-100">
                  <PrimaryStrokeTxt className='text-5xl sm:text-6xl md:text-8xl xl:text-[130px] leading-tight border-b-[1px] block pb-2 border-b-secondary'>
-                   {counter.number}
+                   <CountUp
+                     start={0}
+                     end={counter.number}
+                     delay={2}
+                     duration={5}></CountUp>
                  </PrimaryStrokeTxt>
                  <PNh6 className='text-cstmGrey-100 mt-2 md:mt-8 max-w-[80%]'>
                    {counter.head}

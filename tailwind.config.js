@@ -63,7 +63,9 @@ module.exports = {
         rotate: 'rotate 20s linear infinite',
         pulse: 'pulse 1.5s infinite ease-in-out',
         scrollTxt: 'scrollTxt 20s linear infinite',
-        slide: 'slide 1s linear'
+        slide: 'slide 1s linear',
+        fade: 'fade 2s ease-in-out',
+        loaderLine: 'loaderLine 1s ease-in-out infinite alternate'
       },
       keyframes: {
         'fadeDown': {
@@ -109,6 +111,26 @@ module.exports = {
           },
           '100%': {
             maxHeight: `100%`
+
+          }
+        },
+        'fade': {
+          '0%': {
+            opacity: '1'
+          },
+          '80%': {
+            opacity: '1'
+          },
+          '100%': {
+            opacity: '0'
+          }
+        },
+        'loaderLine': {
+          '0%': {
+            transform: `scaleX(0.1)`
+          },
+          '100%': {
+            transform: `scaleX(2)`
 
           }
         }
