@@ -7,6 +7,7 @@ module.exports = {
     "./src/Pages/Home/Sections/*.{js,ts,jsx,tsx}",
     "./src/Pages/About/*.{js,ts,jsx,tsx}",
     "./src/Pages/About/Sections/*.{js,ts,jsx,tsx}",
+    "./build/*.html",
     "./src/*.{js,ts,jsx,tsx}",
   ],
   theme: {
