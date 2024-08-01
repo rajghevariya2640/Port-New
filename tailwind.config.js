@@ -40,7 +40,7 @@ module.exports = {
       },
       backgroundImage: {
         'HomeBanner': "url('/src/assets/image/Home/png/Banner.jpeg')",
-        'testimonial': "url('/src/assets/image/Home/png/TestiBg.png')",
+        ' ': "url('/src/assets/image/Home/png/TestiBg.png')",
         'video': "url('/src/assets/image/Home/png/VideoBg.png')",
         'contact': "url('/src/assets/image/Home/png/ContactBg.png')",
         'footerBg': "url('/src/assets/image/Home/png/FooterBG.png')",
@@ -52,7 +52,7 @@ module.exports = {
       boxShadow: {
         'btn': '-1px -1px 4px #114546, 4px 4px 9px #070618, 0px 0px 7px #0E4D4E',
         'btnHover': 'inset -10px -10px 4px #04FFBC, inset 4px 4px 9px #005F2C, inset 10px 5px 7px #081D34',
-        'footerBtnShadow': 'inset -10px -10px 4px #04FFBC, inset 4px 4px 9px #005F2C, inset 0px 0px 7px #000000'
+        'footerBtnShadow': 'inset -10px -10px 4px #04FFBC, inset 4px 4px 9px #005F2C, inset 0px 0px 7px #000000',
       },
       fontFamily: {
         'syne': 'Syne',

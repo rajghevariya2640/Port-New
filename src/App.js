@@ -23,6 +23,9 @@ function App() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   // AOS
   useEffect(() => {
@@ -32,9 +35,6 @@ function App() {
     });
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   // Loader
   const [showLoading, setShowLoading] = useState(true);

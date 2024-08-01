@@ -146,7 +146,6 @@ const Header = () => {
               >
                 {menu.map((menu, menuIndex) => {
                   return (
-                    <>
                       <li
                         key={menuIndex}
                         className={`relative group py-2 lg:py-0 overflow-hidden  lg:overflow-visible lg:h-full transition-height duration-500 ${
@@ -169,7 +168,6 @@ const Header = () => {
                           </span>
                         </PNNavLink>
                         {menu.smList && (
-                          <>
                             <ul
                               className={`lg:opacity-0 lg:invisible  lg:translate-y-4 lg:group-hover:translate-y-0  lg:group-hover:opacity-100 lg:group-hover:visible lg:absolute top-full left-0 bg-primary-100 lg:py-2.5 rounded-b-lg lg:w-[260px] ps-5 lg:ps-0 lg:border-t-2  border-secondary duration-500`}
                             >
@@ -186,10 +184,8 @@ const Header = () => {
                                 );
                               })}
                             </ul>
-                          </>
                         )}
                       </li>
-                    </>
                   );
                 })}
               </ul>

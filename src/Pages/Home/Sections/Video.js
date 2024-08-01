@@ -32,8 +32,8 @@ const Video = () => {
       <PNContainer>
         <div className='py-16 lg:py-24'>
           {isOpen && (
-           <div ref={videoRef} className='fixed top-0 left-0 flex items-center justify-center bg-cstmGrey-0 h-screen w-full z-[51]'>
-             <div className='relative' ref={videoRef}>
+           <div    className='fixed top-0 left-0 flex items-center justify-center bg-cstmGrey-0 h-screen w-full z-[51]'>
+             <div className='relative' >
                <video
                  width='100%'
                  height='auto'
